@@ -1,9 +1,9 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { LoggerService } from 'src/logger.service';
-import { Film } from 'src/models/film.entity';
-import { CreateFilmDto, UpdateFilmDto } from 'src/controllers/film/film.dto';
+import { LoggerService } from '../../logger.service';
+import { Film } from '../../models/film.entity';
+import { CreateFilmDto, UpdateFilmDto } from '../../controllers/film/film.dto';
 
 @Injectable()
 export class FilmService {

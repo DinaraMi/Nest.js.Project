@@ -1,8 +1,8 @@
 import { Controller, Get, Post, Body, Put, Param, UsePipes, ValidationPipe } from '@nestjs/common';
 import { CreateFilmDto, UpdateFilmDto } from './film.dto';
-import { FilmService } from 'src/service/film/film.service';
+import { FilmService } from '../../service/film/film.service';
 import { ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
-import { Film } from 'src/models/film.entity';
+import { Film } from '../../models/film.entity';
 
 @ApiTags('Фильмы')
 @Controller('film')
